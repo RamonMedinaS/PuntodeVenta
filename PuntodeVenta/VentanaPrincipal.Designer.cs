@@ -33,6 +33,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMenuUsuarios = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnMenuInventario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,10 +53,11 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
-            this.btnMenuUsuarios});
+            this.btnMenuUsuarios,
+            this.btnMenuInventario});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(801, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -80,11 +82,18 @@
             this.btnMenuUsuarios.Text = "Usuarios";
             this.btnMenuUsuarios.Click += new System.EventHandler(this.btnMenuUsuarios_Click);
             // 
+            // btnMenuInventario
+            // 
+            this.btnMenuInventario.Name = "btnMenuInventario";
+            this.btnMenuInventario.Size = new System.Drawing.Size(107, 29);
+            this.btnMenuInventario.Text = "Inventario";
+            this.btnMenuInventario.Click += new System.EventHandler(this.btnMenuInventario_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(801, 378);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -104,5 +113,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem btnMenuUsuarios;
+        private System.Windows.Forms.ToolStripMenuItem btnMenuInventario;
     }
 }

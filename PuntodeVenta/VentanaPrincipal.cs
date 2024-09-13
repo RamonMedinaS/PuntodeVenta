@@ -29,5 +29,13 @@ namespace PuntodeVenta
             v1.ShowDialog();
             this.Show();
         }
+
+        private void btnMenuInventario_Click(object sender, EventArgs e)
+        {
+            Inventario v1 = new Inventario();
+            this.Hide();
+            v1.ShowDialog();
+            this.Show();
+        }
     }
 }
