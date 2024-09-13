@@ -40,6 +40,7 @@ namespace PuntodeVenta
 
         private void btnEliminarU_Click(object sender, EventArgs e)
         {
+            cn.EliminarUsuario(txtDNI.Text);
             dataGridView1.DataSource = cn.ConsultarDT();
         }
     }
