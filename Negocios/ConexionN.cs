@@ -23,6 +23,11 @@ namespace Negocios
             return cn.ConsultaUsuariosDG();
         }
 
+        public DataTable ConsultarDTI()
+        {
+            return cn.ConsultaInventarioDG();
+        }
+
         public int InsertarUsuario(string nom, string apel, string dni, string tel, string user, string pass)
         {
             return cn.InsertarUsuario(nom,apel,dni,tel,user,pass);
@@ -36,6 +41,11 @@ namespace Negocios
         public int EliminarUsuario(string dni)
         {
             return cn.EliminarUsuario(dni);
+        }
+
+        public int InsertarProducto(string prod, string cat, string pre, string cant)
+        {
+            return cn.InsertarProducto(prod,cat,pre,cant);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -66,6 +67,27 @@ namespace Datos
             DataTable table = new DataTable();
             data.Fill(table);
 
+            return table;
+        }
+
+        public int InsertarProducto(string prod, string cat, string pre, string cant)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "INSERT INTO Inventario VALUES ('" + prod + "','" + cat + "','" + pre + "','" + cant + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
+        public DataTable ConsultaInventarioDG()
+        {
+            string query = "SELECT * FROM Inventario";
+            SqlCommand cdm = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cdm);
+            DataTable table = new DataTable();
+            data.Fill(table);
             return table;
         }
     }

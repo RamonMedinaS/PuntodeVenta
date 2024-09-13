@@ -83,6 +83,7 @@
             this.btnAgregarP.TabIndex = 3;
             this.btnAgregarP.Text = "Agregar";
             this.btnAgregarP.UseVisualStyleBackColor = true;
+            this.btnAgregarP.Click += new System.EventHandler(this.btnAgregarP_Click);
             // 
             // btnEditarP
             // 
@@ -92,6 +93,7 @@
             this.btnEditarP.TabIndex = 4;
             this.btnEditarP.Text = "Editar";
             this.btnEditarP.UseVisualStyleBackColor = true;
+            this.btnEditarP.Click += new System.EventHandler(this.btnEditarP_Click);
             // 
             // txtProducto
             // 
