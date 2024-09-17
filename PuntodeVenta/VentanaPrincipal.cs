@@ -37,5 +37,10 @@ namespace PuntodeVenta
             v1.ShowDialog();
             this.Show();
         }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
